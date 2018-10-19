@@ -5,10 +5,16 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // 1. feladat: mineden szó első betűjét nagybetűre
         System.out.println(nagybetu("kutya, cica, máté, gábor"));
+        // 2. feladat: tükör szó vagy nem
         System.out.println(tukorString("aefhfea"));
+        // 3. feladat: ha nem betü akkor legyen space
         System.out.println(nemBetu("doj3iOcO8, did3Gjdo."));
+        // 4. feladat: csillagig olvas szavakat, első betűjét nagybetűre
         System.out.println(olvasNagybetu());
+        // 5. feladat: magán- vagy mássalhangzó
+        System.out.println(magMasVege("kecske"));
     }
 
     public static String nagybetu(String kis) {
@@ -61,7 +67,17 @@ public class Main {
 
     public static String magMasVege(String str) {
         byte strBytes[] = str.getBytes();
-
+        String s = new String();
+        switch (strBytes[strBytes.length-1]) {
+            case 'a': s = "magánhangzó"; break;
+            case 'e': s = "magánhangzó"; break;
+            case 'i': s = "magánhangzó"; break;
+            case 'o': s = "magánhangzó"; break;
+            case 'u': s = "magánhangzó"; break;
+            default: s = "mássalhangzó";
+        }
+        return s;
     }
+
 
 }
