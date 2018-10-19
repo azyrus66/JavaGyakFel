@@ -1,8 +1,13 @@
+
+import java.util.stream.*;
+import java.util.*;
+
 public class Main {
 	public static void main(String[] args) {
 		System.out.println(nagybetu("kutya, cica, máté, gábor"));
 		System.out.println(tukorString("aefhfea"));
 		System.out.println(nemBetu("doj3iOcO8, did3Gjdo."));
+		System.out.println(olvasNagybetu());
 	}
 
 	public static String nagybetu(String kis) {
@@ -46,8 +51,16 @@ public class Main {
 		return s;
 	}
 
-	public static String olvas() {
-		String s = new String();
-		return s;
+	public static String olvasNagybetu() {
+		Scanner be = new Scanner(System.in).useDelimiter("\\*");
+		System.out.println("Szavak: ");
+		String s = be.next();
+		be.close();
+		return nagybetu(s);
+	}
+	
+	public static String magMasVege(String str) {
+		byte strBytes[] = str.getBytes();
+		
 	}
 }
