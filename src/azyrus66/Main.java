@@ -6,7 +6,10 @@ public class Main {
         StringFel stringFel = new StringFel();
         MatekFel matekFel = new MatekFel();
 
-
+		//TODO: Konzolban ki lehessen választani
+		//a feladatot amit futtatni szeretnék.
+		//GUI??
+		
         //stringFel.StringFel();
         matekFel.MatekFel();
     }
