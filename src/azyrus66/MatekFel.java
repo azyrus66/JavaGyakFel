@@ -40,9 +40,31 @@ public class MatekFel {
 		double[] kor = korKT(5);
 		System.out.println("Kerület: " + kor[0] + "\nTerület: " + kor[1] + "\n");
 		
-		// 8. feladat: 
-		
-        sc.close();
+		// 8. feladat:
+
+	    // 9. feladat: [-1, 1], 0,1 lépésenként f(x)=x3
+	    System.out.println("9. feladat: [-1, 1], 0,1 lépésenként f(x)=x3");
+	    x3();
+	    System.out.println();
+
+	    // 10. feladat: Első 10 négyzetszám
+	    System.out.println("10. feladat: Első 10 négyzetszám");
+	    negyzetsz();
+	    System.out.println();
+
+        // 11. feladat: Első 10 természetes szám és négyzetük
+	    System.out.println("11. feladat: Első 10 természetes szám és négyzetük");
+	    termNegyzet();
+	    System.out.println();
+
+	    // 12. feladat: első 30 természetes szám össege
+	    System.out.println("12. feladat: első 30 természetes szám össege");
+	    System.out.println(nTermSzamOsszeg() + "\n");
+
+
+
+
+	    sc.close();
     }
 
     private static void szogekSin() {
@@ -105,5 +127,33 @@ public class MatekFel {
 	private static double[] korKT(double r) {
 		double[] kor = {(2*r*Math.PI), (Math.pow(r, 2)*Math.PI)};
 		return kor;
+	}
+
+	private static void x3() {
+    	double x = -1;
+    	while (x <= 1) {
+		    System.out.printf("%+.1f\n", x*3);
+		    x += 0.1;
+	    }
+	}
+
+	private static void negyzetsz() {
+		for (int i = 0; i < 10; i++) {
+			System.out.printf("%d^2 = %d\n", i, (int)Math.pow(i, 2));
+		}
+	}
+
+	private static void termNegyzet() {
+		for (int i = 1; i < 10; i++) {
+			System.out.printf("%d, %d\n", i, (int)Math.pow(i, 2));
+		}
+	}
+
+	private static int nTermSzamOsszeg() {
+		int sum = 0;
+    	for (int i = 1; i < 30; i++) {
+			sum += i;
+		}
+		return sum;
 	}
 }
