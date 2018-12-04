@@ -1,18 +1,20 @@
 package azyrus66;
 
+import javax.swing.*;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
         StringFel stringFel = new StringFel();
         MatekFel matekFel = new MatekFel();
 
-		/*
-		TODO: Konzolban ki lehessen választani a feladatot amit futtatni szeretnék.
-		TODO: GUI??
-		*/
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        SwingUtilities.invokeLater(() -> {
+            Gui gui = new Gui();
+            gui.setVisible(true);
+        });
+
 		//stringFel.StringFel();
-
-
-        matekFel.MatekFel();
+        //matekFel.MatekFel();
     }
 }
