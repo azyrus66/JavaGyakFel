@@ -22,12 +22,12 @@ public class Gui extends JFrame {
 
 	private void setUp() {
 		mainPanel = new JPanel();
-		mainPanel.setLayout(new GridLayout(10, 10, 10, 10));
-		mainPanel.setForeground(new Color(-12828863));
+		mainPanel.setLayout(new FlowLayout());
+		mainPanel.setBackground(new Color(0x3B3E40));
 		add(mainPanel);
 
 		feladatokComboBox = new JComboBox();
-		feladatokComboBox.setForeground(new Color(-12828863));
+		feladatokComboBox.setForeground(Color.DARK_GRAY);
 		final DefaultComboBoxModel defaultComboBoxModel = new DefaultComboBoxModel();
 		defaultComboBoxModel.addElement("1. fealdat");
 		defaultComboBoxModel.addElement("2. feladat");
@@ -36,7 +36,7 @@ public class Gui extends JFrame {
 		mainPanel.add(feladatokComboBox, new GridLayout(1, 1, 1, 1));
 
 		runButton = new JButton();
-		runButton.setForeground(new Color(-12828863));
+		runButton.setForeground(Color.DARK_GRAY);
 		runButton.setText("Run");
 		mainPanel.add(runButton, new GridLayout(1, 1, 1, 1));
 	}
