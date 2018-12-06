@@ -3,18 +3,18 @@ package azyrus66;
 import java.util.Scanner;
 
 public class StringFel {
+    public static String  elsoNagybetuString = "Mineden szó első betűjét nagybetűre";
+    public static String tukorString = "Tükör szó vagy nem";
+    public static String nemBetuString = "Ha nem betü akkor legyen space";
     public void StringFel() {
         Scanner sc = new Scanner(System.in);
 
-        // 1. feladat: mineden szó első betűjét nagybetűre
-        System.out.println("1. feladat: Minen szó első betűjét nagybetűre.\nSzöveg: ");
-        System.out.println(elsoNagybetu(sc.nextLine()) + "\n");
+        //System.out.println("1. feladat: Minen szó első betűjét nagybetűre.\nSzöveg: ");
+        //System.out.println(elsoNagybetu(sc.nextLine()) + "\n");
 
-        // 2. feladat: tükör szó vagy nem
-        System.out.println("2. feladat: Tükör szó vagy sem?\nSzó: ");
-        System.out.println(tukorString(sc.nextLine()) + "\n");
+        //System.out.println("2. feladat: Tükör szó vagy sem?\nSzó: ");
+        //System.out.println(tukor(sc.nextLine()) + "\n");
 
-        // 3. feladat: ha nem betü akkor legyen space
         System.out.println("3. feladat: Ha nem betű akkor legyen space.\nSzöveg: ");
         System.out.println(nemBetu(sc.nextLine()) + "\n");
 
@@ -72,7 +72,7 @@ public class StringFel {
         sc.close();
     }
 
-    private static String elsoNagybetu(String kis) {
+    public static String elsoNagybetu(String kis) {
         byte kisBytes[] = kis.getBytes();
 
         if ((kisBytes[0] >= 97) && (kisBytes[0] <= 122)) {
@@ -87,7 +87,7 @@ public class StringFel {
         return nagy;
     }
 
-    private static boolean tukorString(String srg) {
+    public static boolean tukor(String srg) {
         byte srgBytes[] = srg.getBytes();
         int i = 0, j = srgBytes.length - 1;
         while (true) {
@@ -101,7 +101,7 @@ public class StringFel {
         }
     }
 
-    private static String nemBetu(String srg) {
+    public static String nemBetu(String srg) {
         byte srgBytes[] = srg.getBytes();
         for (int i = 0; i < srgBytes.length; i++) {
             if (!(((srgBytes[i] >= 'A') && (srgBytes[i] <= 'Z')) || ((srgBytes[i] >= 'a') && (srgBytes[i] <= 'z')))) {
@@ -112,11 +112,11 @@ public class StringFel {
         return s;
     }
 
-    private static String csillagNagybetu(String str) {
+    public static String csillagNagybetu(String str) {
         return str.toUpperCase();
     }
 
-    private static String magMasVege(String str) {
+    public static String magMasVege(String str) {
         byte strBytes[] = str.getBytes();
         String s;
         switch (strBytes[strBytes.length - 1]) {
@@ -141,7 +141,7 @@ public class StringFel {
         return s;
     }
 
-    private static boolean anagramma(String str1, String str2) {
+    public static boolean anagramma(String str1, String str2) {
         byte str1Bytes[] = str1.getBytes();
         byte str2Bytes[] = str2.getBytes();
         int str1n = 0, str2n = 0;
@@ -154,18 +154,18 @@ public class StringFel {
         } else return false;
     }
 
-    private static String szoCsere(String mondat, String szo1, String szo2) {
+    public static String szoCsere(String mondat, String szo1, String szo2) {
         return mondat.replaceAll(szo1, szo2);
     }
 
-    private static void angolAbc() {
+    public static void angolAbc() {
         for (int i = 97; i <= 122; i++) {
             System.out.print((char)i + " ");
         }
         System.out.println();
     }
 
-    private static void angolAbcHaromCiklus() {
+    public static void angolAbcHaromCiklus() {
         System.out.println("for ciklus:");
         angolAbc(); // for ciklussal
 
@@ -186,14 +186,14 @@ public class StringFel {
         System.out.println();
     }
 
-    private static String nHosszuSor(int n, String str) {
+    public static String nHosszuSor(int n, String str) {
         while (str.length() < n) {
             str += ".";
         }
         return str.substring(0, n);
     }
 
-    private static String strFordit(String str) {
+    public static String strFordit(String str) {
         String rts = "";
         for (int i = str.length()-1; i >= 0; i--) {
             rts += str.substring(i, i+1);
@@ -201,11 +201,11 @@ public class StringFel {
         return rts;
     }
 
-    private static String strTorol(String str) {
+    public static String strTorol(String str) {
         return str.replaceAll("a", "");
     }
 
-    private static String strNagybetu(String str) {
+    public static String strNagybetu(String str) {
         if (str.length() > 100) {
             return str.substring(0, 100).toUpperCase();
         }
@@ -214,11 +214,11 @@ public class StringFel {
         }
     }
 
-    private static String strKeres(String str1, String str2) {
+    public static String strKeres(String str1, String str2) {
         return str2.substring(str2.indexOf(str1), str2.indexOf(str1) + str1.length());
     }
 
-    private static String szoEgyesit(String str) {
+    public static String szoEgyesit(String str) {
         return str.replaceAll(" ", "");
     }
 }

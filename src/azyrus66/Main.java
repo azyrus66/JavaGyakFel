@@ -11,7 +11,6 @@ public class Main {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         SwingUtilities.invokeLater(() -> {
             Gui gui = new Gui();
-            gui.setVisible(true);
         });
 
 		//stringFel.StringFel();
