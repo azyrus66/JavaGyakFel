@@ -118,7 +118,12 @@ public class StringFel {
     }
 
     public static String csillagNagybetu(String str) {
-        return str.toUpperCase();
+        if (str.contains("*")) {
+            return str.substring(0, str.indexOf("*")).toUpperCase();
+        }
+        else {
+            return null;
+        }
     }
 
     public static String magMasVege(String str) {

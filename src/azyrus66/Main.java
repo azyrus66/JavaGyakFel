@@ -8,6 +8,8 @@ public class Main {
         StringFel stringFel = new StringFel();
         MatekFel matekFel = new MatekFel();
 
+        System.out.println(UIManager.getSystemLookAndFeelClassName());
+
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         SwingUtilities.invokeLater(() -> {
             Gui gui = new Gui();
