@@ -29,12 +29,11 @@ public class GuiFeladatok implements ActionListener, PropertyChangeListener {
 		comboBoxPane.setBackground(Color.DARK_GRAY);
 
 		String[] feladatok = new String[16];
-		feladatok[0] = "Válaszd ki a feladatot!";
+		feladatok[0] = Main.guiBundle.getString("tasks_comboBox_text_0");
 		for (int i = 1; i <= 15; i++) {
-			feladatok[i] = (i + ". feladat");
+			feladatok[i] = (i + Main.guiBundle.getString("tasks_comboBox_text_1-15"));
 		}
 		feladatokComboBox = new JComboBox<>(feladatok);
-		feladatokComboBox.setBackground(Color.LIGHT_GRAY);
 		feladatokComboBox.setMaximumSize(new Dimension(400, 40));
 		feladatokComboBox.setMinimumSize(new Dimension(200, 40));
 		feladatokComboBox.addActionListener(this);
@@ -77,8 +76,7 @@ public class GuiFeladatok implements ActionListener, PropertyChangeListener {
 		outputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		outputPane.setBackground(Color.LIGHT_GRAY);
 
-		runButton = new JButton("Run");
-		runButton.setContentAreaFilled(true);
+		runButton = new JButton(Main.guiBundle.getString("tasks_button_text"));
 		runButton.addActionListener(this);
 
 		label = new JTextArea();
@@ -129,7 +127,7 @@ public class GuiFeladatok implements ActionListener, PropertyChangeListener {
 			if (!inputString.isEmpty()) {
 				switch (feladatokComboBox.getSelectedIndex()) {
 					case 1: {updateLabel(StringFel.elsoNagybetu(inputString)); break;}
-					case 2: {updateLabel(StringFel.tukor(inputString) ? "Tükörszó!" : "Nem tükörszó!"); break;}
+					case 2: {updateLabel(StringFel.tukor(inputString) ? Main.guiBundle.getString("tasks_string_tukor_true") : Main.guiBundle.getString("tasks_string_tukor_false")); break;}
 					case 3: {updateLabel(StringFel.nemBetu(inputString)); break;}
 					case 4: {updateLabel(StringFel.csillagNagybetu(inputString)); break;}
 					case 5: {updateLabel(StringFel.magMasVege(inputString)); break;}
@@ -142,7 +140,7 @@ public class GuiFeladatok implements ActionListener, PropertyChangeListener {
 
 			if (!inputString.isEmpty() && !inputString2.isEmpty()) {
 				switch (feladatokComboBox.getSelectedIndex()) {
-					case 6: {updateLabel(StringFel.anagramma(inputString, inputString2) ? "Anagramma!" : "Nem anagramma!"); break;}
+					case 6: {updateLabel(StringFel.anagramma(inputString, inputString2) ? Main.guiBundle.getString("tasks_string_anagramma_true") : Main.guiBundle.getString("tasks_string_anagramma_false")); break;}
 					case 10: {updateLabel(StringFel.nHosszuSor(Integer.parseInt(inputString), inputString2)); break;}
 					case 14: {updateLabel(StringFel.strKeres(inputString, inputString2)); break;}
 				}
@@ -159,7 +157,7 @@ public class GuiFeladatok implements ActionListener, PropertyChangeListener {
 
 			if ((input.isEditable() && inputString.isEmpty()) ||
 					(input2.isEditable() && inputString2.isEmpty()) || (input3.isEditable() && inputString3.isEmpty())) {
-				JOptionPane.showMessageDialog(mainPane, "Nem lehet üres!");
+				JOptionPane.showMessageDialog(mainPane, Main.guiBundle.getString("tasks_optionPane_text"));
 			}
 		}
 	}
