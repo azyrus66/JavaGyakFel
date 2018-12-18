@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
-	    guiBundle = ResourceBundle.getBundle("azyrus66.gui", huLocale);
+	    guiBundle = ResourceBundle.getBundle("azyrus66.properties_gui", huLocale);
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
         SwingUtilities.invokeLater(() -> {

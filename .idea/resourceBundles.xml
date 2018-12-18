@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ResourceBundleManager">
-    <file url="file://$PROJECT_DIR$/src/azyrus66/gui.properties" />
-    <file url="file://$PROJECT_DIR$/src/azyrus66/gui_en.properties" />
+    <file url="file://$PROJECT_DIR$/src/azyrus66/gui.xml" />
+    <file url="file://$PROJECT_DIR$/src/azyrus66/gui_en_properties.xml" />
+    <file url="file://$PROJECT_DIR$/src/azyrus66/gui_hu_properties.xml" />
+    <file url="file://$PROJECT_DIR$/src/azyrus66/properties_gui.xml" />
+    <file url="file://$PROJECT_DIR$/src/azyrus66/properties_gui_en.xml" />
+    <file url="file://$PROJECT_DIR$/src/azyrus66/properties_gui_hu.xml" />
+    <file url="file://$PROJECT_DIR$/src/gui.properties" />
+    <file url="file://$PROJECT_DIR$/src/gui_en.properties" />
+    <file url="file://$PROJECT_DIR$/src/gui_en_properties.xml" />
+    <file url="file://$PROJECT_DIR$/src/gui_hu_properties.xml" />
     <custom-resource-bundle>
-      <file value="file://$PROJECT_DIR$/src/azyrus66/gui.properties" />
-      <file value="file://$PROJECT_DIR$/src/azyrus66/gui_en.properties" />
-      <file value="file://$PROJECT_DIR$/src/azyrus66/gui_hu.properties" />
+      <file value="file://$PROJECT_DIR$/src/gui_en_properties.xml" />
+      <file value="file://$PROJECT_DIR$/src/gui_hu_properties.xml" />
       <base-name>gui</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/azyrus66/properties_gui.xml" />
+      <file value="file://$PROJECT_DIR$/src/azyrus66/properties_gui_en.xml" />
+      <file value="file://$PROJECT_DIR$/src/azyrus66/properties_gui_hu.xml" />
+      <base-name>properties_gui</base-name>
     </custom-resource-bundle>
   </component>
 </project>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>gui.properties</comment>
+<entry key="tasks_button_text">Futtatás</entry>
+<entry key="tasks_string_anagramma">Anagramma?</entry>
+<entry key="subMenu_tasks">Feladatok</entry>
+<entry key="tasks_string_szoCsere">Mondatban kicserél egy szót egy másikra</entry>
+<entry key="menu_view">Nézet</entry>
+<entry key="tasks_string_tukor">Tükör szó vagy nem</entry>
+<entry key="tasks_string_strFordit">Megfordít egy sztringet</entry>
+<entry key="tasks_string_strKeres">Megkeres egy sztringet egy másik sztringben</entry>
+<entry key="tasks_string_angolAbcHaromCiklus">Angol abc betűi három ciklussal</entry>
+<entry key="menu_file">Fájl</entry>
+<entry key="item_tasks_math">Matek</entry>
+<entry key="tasks_string_anagramma_false">Nem anagramma!</entry>
+<entry key="tasks_string_szoEgyesit">Egyesít két szót</entry>
+<entry key="tasks_string_elsoNagybetu">Mineden szó első betűjét nagybetűre</entry>
+<entry key="tasks_string_nHosszuSor">N hosszúságú string, üres hely szóközzel kitöltve</entry>
+<entry key="tasks_comboBox_text_0">Válassz feladatot!</entry>
+<entry key="item_design_system">Rendszer</entry>
+<entry key="tasks_string_anagramma_true">Anagramma!</entry>
+<entry key="tasks_string_tukor_false">Nem tükörszó!</entry>
+<entry key="tasks_optionPane_text">Nem lehet üres!</entry>
+<entry key="tasks_comboBox_text_1-15">. feladat</entry>
+<entry key="tasks_string_tukor_true">Tükörszó!</entry>
+<entry key="tasks_string_strTorol">Töröl minden 'a' karaktert a sztringből</entry>
+<entry key="tasks_string_csillagNagybetu">Csillagig olvas szavakat, nagybetűsen kiírja</entry>
+<entry key="item_languages_english">Angol</entry>
+<entry key="item_languages_hungarian">Magyar</entry>
+<entry key="frame_title">Ablak</entry>
+<entry key="item_design_nimbus">Nimbus</entry>
+<entry key="item_design_java">Java</entry>
+<entry key="subMenu_design">Dizájn</entry>
+<entry key="subMenu_languages">Nyelv</entry>
+<entry key="tasks_string_nemBetu">Ha nem betű akkor legyen space</entry>
+<entry key="item_tasks_string">Sztring</entry>
+<entry key="tasks_string_magMasVeg">Magán- vagy mássalhangzóra végződik?</entry>
+<entry key="tasks_string_strNagybetu">Legfeljebb 100 betűs mondatot nagybetűre</entry>
+<entry key="tasks_string_angolAbc">Angol abc betűi</entry>
+</properties>

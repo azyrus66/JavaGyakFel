@@ -16,9 +16,7 @@ public class Gui extends JFrame implements ActionListener {
 	private static final Color DARK_GRAY = new Color(0x3B3E40);
 
 	public Gui() {
-		String text = Main.guiBundle.getString("frame_Title");
-		System.out.println(text);
-		frame = new JFrame(text);
+		frame = new JFrame(Main.guiBundle.getString("frame_title"));
 		frame.setLocationRelativeTo(null);
 		frame.setMinimumSize(new Dimension(350, 500));
 		frame.setPreferredSize(new Dimension(500, 500));
