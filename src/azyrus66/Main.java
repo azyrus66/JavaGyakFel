@@ -6,11 +6,12 @@ import java.util.ResourceBundle;
 
 public class Main {
 
-	private static Locale huLocale = new Locale("hu");
-	static ResourceBundle guiBundle = ResourceBundle.getBundle("azyrus66.gui", huLocale);
+	static Locale huLocale = new Locale("hu");
+	static ResourceBundle guiBundle;
 
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
+	    guiBundle = ResourceBundle.getBundle("azyrus66.gui", huLocale);
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
         SwingUtilities.invokeLater(() -> {
